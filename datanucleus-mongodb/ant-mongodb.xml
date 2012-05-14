@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MongoDb Test" basedir="." default="mongodb.start">
+	
+	<target name="mongodb.start" description="Start MongoDb Server">
+		<exec executable="/opt/mongodb/bin/mongod">
+			<arg value="--dbpath"/>
+			<arg value="/opt/mongodb/data"/>
+			<arg value="--port"/>
+			<arg value="27001"/>
+		</exec>
+	</target>
+	
+</project>
